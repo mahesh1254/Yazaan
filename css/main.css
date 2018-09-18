@@ -1,0 +1,347 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400);
+@import url(http://fonts.googleapis.com/css?family=Raleway:500,700,100,400,300,200);
+@font-face {
+  font-family: 'Quilt';
+  src: url('../font/QuidProQuo.ttf') format('truetype'); }
+
+/* line 9, D:/Project Stuff/Yazaan/scss/main.scss */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box; }
+
+/* line 26, D:/Project Stuff/Yazaan/scss/main.scss */
+.revealOnScroll {
+  /*opacity: 0;
+    transition: opacity 1s ease 0.5s;
+    &.animated {
+        opacity: 1;
+    }*/ }
+
+/* line 35, D:/Project Stuff/Yazaan/scss/main.scss */
+#container #header {
+  background: url("../imgs/Stipula_fountain_pen.jpg");
+  background-size: cover;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100vh;
+  text-align: center; }
+  /* line 41, D:/Project Stuff/Yazaan/scss/main.scss */
+  #container #header:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(17, 17, 17, 0.5); }
+  /* line 54, D:/Project Stuff/Yazaan/scss/main.scss */
+  #container #header #title {
+    padding-top: 25px;
+    position: relative; }
+    /* line 57, D:/Project Stuff/Yazaan/scss/main.scss */
+    #container #header #title #cad-logo {
+      display: inline-block;
+      width: 100px;
+      position: absolute;
+      top: 25px;
+      left: 25px; }
+      /* line 60, D:/Project Stuff/Yazaan/scss/main.scss */
+      #container #header #title #cad-logo img {
+        max-width: 100%; }
+    /* line 67, D:/Project Stuff/Yazaan/scss/main.scss */
+    #container #header #title h1 {
+      display: inline-block;
+      font-family: 'Quilt', sans-serif;
+      font-weight: normal;
+      letter-spacing: 0.3em;
+      font-size: 7em;
+      color: #1b85ff;
+      text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); }
+    /* line 76, D:/Project Stuff/Yazaan/scss/main.scss */
+    #container #header #title #inklings-logo {
+      display: inline-block;
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      top: 25px;
+      right: 25px; }
+      /* line 80, D:/Project Stuff/Yazaan/scss/main.scss */
+      #container #header #title #inklings-logo img {
+        max-width: 100%; }
+  /* line 88, D:/Project Stuff/Yazaan/scss/main.scss */
+  #container #header .para {
+    margin: 100px 0px 0px 0px;
+    text-align: center;
+    display: inline-block;
+    width: 75%;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 1.1em;
+    letter-spacing: 0.1em;
+    word-spacing: 0.1em;
+    line-height: 2.5em;
+    position: relative; }
+/* line 104, D:/Project Stuff/Yazaan/scss/main.scss */
+#container #content .activites {
+  box-shadow: 0px -10px 20px 0px rgba(0, 0, 0, 0.5);
+  position: relative;
+  background: url("../imgs/145.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100vh;
+  color: white;
+  padding: 50px 50px;
+  font-family: 'Raleway', sans-serif;
+  text-align: center; }
+  /* line 112, D:/Project Stuff/Yazaan/scss/main.scss */
+  #container #content .activites:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3); }
+  /* line 129, D:/Project Stuff/Yazaan/scss/main.scss */
+  #container #content .activites h2 {
+    position: relative;
+    font-weight: 300;
+    font-size: 4em;
+    letter-spacing: 0.5em;
+    text-transform: uppercase; }
+  /* line 136, D:/Project Stuff/Yazaan/scss/main.scss */
+  #container #content .activites ul {
+    list-style: none;
+    margin-top: 50px;
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center; }
+    /* line 144, D:/Project Stuff/Yazaan/scss/main.scss */
+    #container #content .activites ul li {
+      height: 100px;
+      width: 100%;
+      display: table;
+      font-weight: 400;
+      font-size: 1.3em;
+      text-transform: capitalize;
+      margin: 0;
+      border-bottom: 1px solid green; }
+      /* line 154, D:/Project Stuff/Yazaan/scss/main.scss */
+      #container #content .activites ul li:last-child {
+        border-bottom: 0; }
+      /* line 157, D:/Project Stuff/Yazaan/scss/main.scss */
+      #container #content .activites ul li p {
+        display: table-cell;
+        vertical-align: middle;
+        width: 100%;
+        transition: background 0.6s ease; }
+      /* line 164, D:/Project Stuff/Yazaan/scss/main.scss */
+      #container #content .activites ul li:nth-child(1) p:hover {
+        background: rgba(0, 255, 0, 0.3); }
+      /* line 169, D:/Project Stuff/Yazaan/scss/main.scss */
+      #container #content .activites ul li:nth-child(2) p:hover {
+        background: rgba(0, 137, 255, 0.3); }
+      /* line 174, D:/Project Stuff/Yazaan/scss/main.scss */
+      #container #content .activites ul li:nth-child(3) p:hover {
+        background: rgba(255, 137, 0, 0.3); }
+      /* line 179, D:/Project Stuff/Yazaan/scss/main.scss */
+      #container #content .activites ul li:nth-child(4) p:hover {
+        background: rgba(196, 0, 255, 0.3); }
+/* line 186, D:/Project Stuff/Yazaan/scss/main.scss */
+#container #content .yazaan {
+  box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.6);
+  position: relative;
+  overflow: hidden;
+  background: url("../imgs/yazaan.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center top;
+  text-align: center;
+  color: white;
+  font-family: 'Raleway', sans-serif; }
+  /* line 196, D:/Project Stuff/Yazaan/scss/main.scss */
+  #container #content .yazaan:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3); }
+  /* line 212, D:/Project Stuff/Yazaan/scss/main.scss */
+  #container #content .yazaan h2 {
+    position: relative;
+    padding: 25px 0px 25px 0px;
+    text-transform: uppercase;
+    font-size: 5em;
+    letter-spacing: 0.9em;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    font-family: 'Lato', sans-serif; }
+  /* line 221, D:/Project Stuff/Yazaan/scss/main.scss */
+  #container #content .yazaan p {
+    position: relative;
+    padding: 0 10% 0 10%;
+    margin-bottom: 50px;
+    text-align: justify;
+    font-size: 1.3em;
+    letter-spacing: 0.1em;
+    word-spacing: 0.2em;
+    line-height: 1.5em;
+    font-weight: 100; }
+    /* line 232, D:/Project Stuff/Yazaan/scss/main.scss */
+    #container #content .yazaan p:nth-child(2) {
+      font-style: italic;
+      padding: 0 25% 0 25%;
+      font-weight: 400;
+      font-size: 1em;
+      color: #ff5757; }
+      /* line 238, D:/Project Stuff/Yazaan/scss/main.scss */
+      #container #content .yazaan p:nth-child(2) .em {
+        color: white; }
+    /* line 242, D:/Project Stuff/Yazaan/scss/main.scss */
+    #container #content .yazaan p .em {
+      font-style: italic;
+      font-weight: 400;
+      color: #37b2ff; }
+      /* line 246, D:/Project Stuff/Yazaan/scss/main.scss */
+      #container #content .yazaan p .em.first {
+        color: #61ff61; }
+      /* line 249, D:/Project Stuff/Yazaan/scss/main.scss */
+      #container #content .yazaan p .em.fullstop {
+        font-style: normal;
+        font-family: monospace;
+        color: #ff9300;
+        font-size: 2em;
+        margin-left: 0.1em; }
+/* line 259, D:/Project Stuff/Yazaan/scss/main.scss */
+#container #content .team {
+  position: relative;
+  box-shadow: 0px 0px 20px #000;
+  background: #49db4f;
+  overflow: hidden;
+  color: #3b3b3b;
+  font-family: 'Raleway', sans-serif; }
+  /* line 267, D:/Project Stuff/Yazaan/scss/main.scss */
+  #container #content .team:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, rgba(245, 255, 0, 0.5)); }
+  /* line 279, D:/Project Stuff/Yazaan/scss/main.scss */
+  #container #content .team .team-names {
+    position: relative;
+    padding: 25px 0px 25px 50px; }
+    /* line 282, D:/Project Stuff/Yazaan/scss/main.scss */
+    #container #content .team .team-names h2 {
+      font-weight: 400;
+      font-size: 2em;
+      letter-spacing: 0.2em;
+      word-spacing: 0.3em;
+      display: inline-block;
+      border-bottom: 1px solid white;
+      padding-bottom: 5px; }
+    /* line 292, D:/Project Stuff/Yazaan/scss/main.scss */
+    #container #content .team .team-names ul {
+      padding: 0;
+      list-style: none;
+      margin-top: 20px; }
+      /* line 296, D:/Project Stuff/Yazaan/scss/main.scss */
+      #container #content .team .team-names ul li {
+        margin: 1em 0em;
+        font-size: 1em; }
+        /* line 299, D:/Project Stuff/Yazaan/scss/main.scss */
+        #container #content .team .team-names ul li .designation {
+          color: #fff;
+          font-weight: bold;
+          margin-right: 10px;
+          text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+          transition: color 0.3s linear; }
+  /* line 309, D:/Project Stuff/Yazaan/scss/main.scss */
+  #container #content .team .contacts {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 25px 50px 25px 25px; }
+    /* line 314, D:/Project Stuff/Yazaan/scss/main.scss */
+    #container #content .team .contacts h2 {
+      font-weight: 400;
+      font-size: 2em;
+      letter-spacing: 0.2em;
+      word-spacing: 0.3em;
+      display: inline-block;
+      transition: border-bottom 0.3s linear;
+      border-bottom: 1px solid white;
+      padding-bottom: 5px; }
+      /* line 323, D:/Project Stuff/Yazaan/scss/main.scss */
+      #container #content .team .contacts h2:hover {
+        border-bottom: 1px solid white; }
+    /* line 327, D:/Project Stuff/Yazaan/scss/main.scss */
+    #container #content .team .contacts ul {
+      margin-top: 20px;
+      list-style: none; }
+      /* line 330, D:/Project Stuff/Yazaan/scss/main.scss */
+      #container #content .team .contacts ul li {
+        font-size: 1em;
+        margin: 1em 0em; }
+        /* line 333, D:/Project Stuff/Yazaan/scss/main.scss */
+        #container #content .team .contacts ul li .name {
+          color: #fff;
+          font-weight: bold;
+          margin-right: 10px;
+          text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); }
+/* line 344, D:/Project Stuff/Yazaan/scss/main.scss */
+#container #footer {
+  height: 60px;
+  background: grey;
+  position: relative;
+  width: 100%;
+  text-align: center;
+  display: table; }
+  /* line 351, D:/Project Stuff/Yazaan/scss/main.scss */
+  #container #footer > div {
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle; }
+    /* line 355, D:/Project Stuff/Yazaan/scss/main.scss */
+    #container #footer > div img {
+      vertical-align: middle;
+      margin: 0px 10px 0px 10px;
+      width: 40px;
+      height: 40px;
+      transition: transform 0.3s ease; }
+      /* line 361, D:/Project Stuff/Yazaan/scss/main.scss */
+      #container #footer > div img:hover {
+        transform: scale(0.9); }
+    /* line 365, D:/Project Stuff/Yazaan/scss/main.scss */
+    #container #footer > div a:last-child {
+      margin: 0px 10px 0px 10px;
+      display: inline-block;
+      font-family: 'Raleway', sans-serif;
+      text-transform: uppercase;
+      font-weight: bold;
+      color: black;
+      font-size: 0.8em;
+      letter-spacing: 0em;
+      word-spacing: 0.4em;
+      text-decoration: none;
+      transition: color 0.3s ease; }
+      /* line 377, D:/Project Stuff/Yazaan/scss/main.scss */
+      #container #footer > div a:last-child:hover {
+        color: #d9d9d9; }
+    /* line 381, D:/Project Stuff/Yazaan/scss/main.scss */
+    #container #footer > div .seperator {
+      border-right: 1px solid black; }
+
+/*# sourceMappingURL=main.css.map */

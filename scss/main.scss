@@ -1,0 +1,386 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400);
+//@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,300);
+@import url(http://fonts.googleapis.com/css?family=Raleway:500,700,100,400,300,200);
+@font-face {
+    font-family: 'Quilt';
+    src: url('../font/QuidProQuo.ttf') format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {}
+
+@mixin reveal {
+    opacity: 0;
+    transition: opacity 1s ease 0.5s;
+    &.animated {
+        opacity: 1;
+    }
+}
+
+.revealOnScroll {
+    /*opacity: 0;
+    transition: opacity 1s ease 0.5s;
+    &.animated {
+        opacity: 1;
+    }*/
+}
+
+#container {
+    #header {
+        background: url("../imgs/Stipula_fountain_pen.jpg");
+        background-size: cover;
+        background-attachment: scroll;
+        background-repeat: no-repeat;
+        background-position: center center;
+        &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(17, 17, 17, 0.5);
+            //z-index: -1;
+            //background: url("../imgs/pattern-bg-2.png");
+        }
+        height: 100vh;
+        text-align: center;
+        #title {
+            padding-top: 25px;
+            position: relative;
+            #cad-logo {
+                display: inline-block;
+                width: 100px;
+                img {
+                    max-width: 100%;
+                }
+                position: absolute;
+                top: 25px;
+                left: 25px;
+            }
+            h1 {
+                display: inline-block;
+                font-family: 'Quilt', sans-serif;
+                font-weight: normal;
+                letter-spacing: 0.3em;
+                font-size: 7em;
+                color: rgb(27, 133, 255);
+                text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+            }
+            #inklings-logo {
+                display: inline-block;
+                width: 100px;
+                height: 100px;
+                img {
+                    max-width: 100%;
+                }
+                position: absolute;
+                top: 25px;
+                right: 25px;
+            }
+        }
+        .para {
+            margin: 100px 0px 0px 0px;
+            text-align: center;
+            display: inline-block;
+            width: 75%;
+            color: white;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 300;
+            font-size: 1.1em;
+            letter-spacing: 0.1em;
+            word-spacing: 0.1em;
+            line-height: 2.5em;
+            position: relative;
+        }
+    }
+    #content {
+        .activites {
+            box-shadow: 0px -10px 20px 0px rgba(0, 0, 0, 0.5);
+            position: relative;
+            background: url("../imgs/145.jpg");
+            background-size: cover;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-position: center center;
+            &:before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                //z-index: -1;
+                //background: url("../imgs/header-dotgrid.png");
+                background: rgba(0, 0, 0, 0.3);
+            }
+            height: 100vh;
+            color: white;
+            padding: 50px 50px;
+            font-family: 'Raleway',
+            sans-serif;
+            text-align: center;
+            h2 {
+                position: relative;
+                font-weight: 300;
+                font-size: 4em;
+                letter-spacing: 0.5em;
+                text-transform: uppercase;
+            }
+            ul {
+                list-style: none;
+                margin-top: 50px;
+                width: 50%;
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                text-align: center;
+                li {
+                    height: 100px;
+                    width: 100%;
+                    display: table;
+                    font-weight: 400;
+                    font-size: 1.3em;
+                    text-transform: capitalize;
+                    //margin: 5px 0px 5px 0px;
+                    margin: 0;
+                    border-bottom: 1px solid green;
+                    &:last-child {
+                        border-bottom: 0;
+                    }
+                    p {
+                        display: table-cell;
+                        vertical-align: middle;
+                        width: 100%;
+                        transition: background 0.6s ease;
+                    }
+                    &:nth-child(1) {
+                        p:hover {
+                            background: rgba(0, 255, 0, 0.3);
+                        }
+                    }
+                    &:nth-child(2) {
+                        p:hover {
+                            background: rgba(0, 137, 255, 0.3);
+                        }
+                    }
+                    &:nth-child(3) {
+                        p:hover {
+                            background: rgba(255, 137, 0, 0.3);
+                        }
+                    }
+                    &:nth-child(4) {
+                        p:hover {
+                            background: rgba(196, 0, 255, 0.3);
+                        }
+                    }
+                }
+            }
+        }
+        .yazaan {
+            box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.6);
+            position: relative;
+            overflow: hidden;
+            //height: 100vh;
+            background: url("../imgs/yazaan.jpg");
+            background-size: cover;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-position: center top;
+            &:before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                //z-index: -1;
+                //background: //url("../imgs/header-dotgrid.png"),
+                //linear-gradient(0deg, transparent, rgba(0, 0, 0, 0.6));
+                background: rgba(0, 0, 0, 0.3);
+            }
+            text-align: center;
+            color: white;
+            font-family: 'Raleway',
+            sans-serif;
+            h2 {
+                position: relative;
+                padding: 25px 0px 25px 0px;
+                text-transform: uppercase;
+                font-size: 5em;
+                letter-spacing: 0.9em;
+                text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+                font-family: 'Lato', sans-serif;
+            }
+            p {
+                position: relative;
+                padding: 0 10% 0 10%;
+                //margin-top: 50px;
+                margin-bottom: 50px;
+                text-align: justify;
+                font-size: 1.3em;
+                letter-spacing: 0.1em;
+                word-spacing: 0.2em;
+                line-height: 1.5em;
+                font-weight: 100;
+                &:nth-child(2) {
+                    font-style: italic;
+                    padding: 0 25% 0 25%;
+                    font-weight: 400;
+                    font-size: 1em;
+                    color: #ff5757;
+                    .em {
+                        color: white;
+                    }
+                }
+                .em {
+                    font-style: italic;
+                    font-weight: 400;
+                    color: rgb(55, 178, 255);
+                    &.first {
+                        color: rgb(97, 255, 97);
+                    }
+                    &.fullstop {
+                        font-style: normal;
+                        font-family: monospace;
+                        color: #ff9300;
+                        font-size: 2em;
+                        margin-left: 0.1em;
+                    }
+                }
+            }
+        }
+        .team {
+            position: relative;
+            box-shadow: 0px 0px 20px #000;
+            //height: 50vh;
+            background: #49db4f;
+            overflow: hidden;
+            color: #3b3b3b;
+            font-family: 'Raleway', sans-serif;
+            &:before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                //z-index: -1;
+                background: //url("../imgs/header-dotgrid.png"),
+                linear-gradient(180deg, transparent, rgba(245, 255, 0, 0.5));
+                //background: rgba(0, 0, 0, 0.3);
+            }
+            .team-names {
+                position: relative;
+                padding: 25px 0px 25px 50px;
+                h2 {
+                    font-weight: 400;
+                    font-size: 2em;
+                    letter-spacing: 0.2em;
+                    word-spacing: 0.3em;
+                    display: inline-block;
+                    border-bottom: 1px solid white;
+                    padding-bottom: 5px;
+                }
+                
+                ul {
+                    padding: 0;
+                    list-style: none;
+                    margin-top: 20px;
+                    li {
+                        margin: 1em 0em;
+                        font-size: 1em;
+                        .designation {
+                            color: #fff;
+                            font-weight: bold;
+                            margin-right: 10px;
+                            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+                            transition: color 0.3s linear;
+                        }
+                    }
+                }
+            }
+            .contacts {
+                position: absolute;
+                top: 0;
+                right: 0;
+                padding: 25px 50px 25px 25px;
+                h2 {
+                    font-weight: 400;
+                    font-size: 2em;
+                    letter-spacing: 0.2em;
+                    word-spacing: 0.3em;
+                    display: inline-block;
+                    transition: border-bottom 0.3s linear;
+                    border-bottom: 1px solid white;
+                    padding-bottom: 5px;
+                    &:hover {
+                        border-bottom: 1px solid white;
+                    }
+                }
+                ul {
+                    margin-top: 20px;
+                    list-style: none;
+                    li {
+                        font-size: 1em;
+                        margin: 1em 0em;
+                        .name {
+                            color: #fff;
+                            font-weight: bold;
+                            margin-right: 10px;
+                            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #footer {
+        height: 60px;
+        background: grey;
+        position: relative;
+        width: 100%;
+        text-align: center;
+        display: table;
+        >div {
+            height: 100%;
+            display: table-cell;
+            vertical-align: middle;
+            img {
+                vertical-align: middle;
+                margin: 0px 10px 0px 10px;
+                width: 40px;
+                height: 40px;
+                transition: transform 0.3s ease;
+                &:hover {
+                    transform: scale(0.9);
+                }
+            }
+            a:last-child {
+                margin: 0px 10px 0px 10px;
+                display: inline-block;
+                font-family: 'Raleway', sans-serif;
+                text-transform: uppercase;
+                font-weight: bold;
+                color: black;
+                font-size: 0.8em;
+                letter-spacing: 0.0em;
+                word-spacing: 0.4em;
+                text-decoration: none;
+                transition: color 0.3s ease;
+                &:hover {
+                    color: #d9d9d9;
+                }
+            }
+            .seperator {
+                border-right: 1px solid black;
+            }
+        }
+    }
+}
